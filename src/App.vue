@@ -1,17 +1,12 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import NavigationBar from './components/NavigationBar.vue';
+
 </script>
 
 <template>
   <header>
-    <div class="wrapper">
-      <nav>
-        <span>Brendan Musick</span>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/projects">Projects</RouterLink>
-        <RouterLink to="/technologies">Technologies</RouterLink>
-      </nav>
+    <div class="flex justify-center">
+      <NavigationBar />
     </div>
   </header>
 
